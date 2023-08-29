@@ -49,8 +49,8 @@ io.on('connection', (socket) => {
     io.emit('mensagem', mensagens)
   })
 
-  socket.on('atualizarEstado', (clientesPreparados, proximoJogador) => {
-    io.emit('atualizarEstado', clientesPreparados, proximoJogador)
+  socket.on('atualizarEstado', (estado, proximoJogador) => {
+    io.emit('atualizarEstado', estado, proximoJogador)
   })
 
   socket.on('desistir', (player) => {
@@ -73,7 +73,7 @@ io.on('connection', (socket) => {
 
     if(!salaCheia) {
       io.emit('atualizarPlayers', clients[0])
-      clientesPreparados[socket.id].preparado = true
+      clientesPreparados[socket.id] = true
       io.emit('mensagem', mensagens)
     }
 

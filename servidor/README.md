@@ -1,4 +1,4 @@
-## Como inicializar o Servidor
+## Como inicializar o Servidor (Caso não tenha o executável)
 
 1. Verifique se você tem o [NodeJS](https://nodejs.org/pt-br/download) instalado na máquina
 2. Abra o CMD e rode o "npm install" dentro da pasta do servidor

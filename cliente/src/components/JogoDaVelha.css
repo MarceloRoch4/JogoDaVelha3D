@@ -1,0 +1,63 @@
+tbody {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: rotateX(50deg) rotateZ(25deg);
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border: 2px solid black;
+}
+
+table{
+    perspective: 60em;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.jogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    gap: 1em;
+
+    width: 100%;
+}
+
+.chat {
+    width: 350px;
+    min-width: 350px;
+    background-color: whitesmoke;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chat-text {
+    flex-grow: 1;
+    overflow: scroll;
+}
+
+.chat form {
+    display: flex;
+    gap: 20px
+}
+
+.chat form input {
+    flex-grow: 1;
+}
+
+.acoes {
+    display: flex;
+    gap: 2em;
+}
